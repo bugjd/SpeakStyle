@@ -8,7 +8,7 @@
 import SwiftUI
 import AVFoundation
 
-public struct SpeakModifier: ViewModifier {
+ public struct SpeakModifier: ViewModifier {
     var wordToSpeak : String
     let avSpeechSynthesizer = AVSpeechSynthesizer()
     
@@ -30,7 +30,7 @@ public struct SpeakModifier: ViewModifier {
 }
 
 extension View {
-    func speakable(withText wordToSpeak: String) -> some View {
+    public func speakable(withText wordToSpeak: String) -> some View {
         modifier(SpeakModifier(wordToSpeak: wordToSpeak ))
     }
 }
