@@ -8,11 +8,11 @@
 import SwiftUI
 import AVFoundation
 
- public struct SpeakModifier: ViewModifier {
+struct SpeakModifier: ViewModifier {
     var wordToSpeak : String
     let avSpeechSynthesizer = AVSpeechSynthesizer()
     
-    public func body(content: Content) -> some View {
+    func body(content: Content) -> some View {
         Button(action : {
             self.speakWord()
         }) {
