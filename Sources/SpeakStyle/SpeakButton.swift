@@ -7,9 +7,24 @@
 
 import SwiftUI
 
+
+/// A View that displays a SpeakButton
+///
+/// This View accepts a string and creates a SpeakButton view.
+///```swift
+///private var text : String
+///var body : some View {
+///    SpeakButton(text: text)
+///}
+///```
+
 public struct SpeakButton: View {
     private var text : String
     
+    
+    /// Creates a SpeakButton view with the desired text for display in button and on tap through text to speech.
+    ///
+    /// - Parameter text : The text you want displayed in the SpeakButton and spoken to the user upon their tapping on the SpeakButton
     public init(text : String) {
         self.text = text
     }

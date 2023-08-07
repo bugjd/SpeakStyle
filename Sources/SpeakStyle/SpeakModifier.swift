@@ -29,7 +29,12 @@ struct SpeakModifier: ViewModifier {
     }
 }
 
+
+
 extension View {
+    /// This modifier allows you to add text to speak functionality to any SwiftUI view upon tapping it.
+    /// 
+    /// - Parameter wordToSpeak : The word you want spoken.
     public func speakable(withText wordToSpeak: String) -> some View {
         modifier(SpeakModifier(wordToSpeak: wordToSpeak ))
     }
