@@ -29,8 +29,6 @@ struct SpeakModifier: ViewModifier {
     }
 }
 
-
-
 extension View {
     /// This modifier allows you to add text to speak functionality to any SwiftUI view upon tapping it.
     /// 
